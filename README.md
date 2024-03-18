@@ -30,16 +30,16 @@ There are two videos to support:
 # Read below if you see an error with `python_full_version`
 
 # Create the database
-; createdb YOUR_PROJECT_NAME
+(databases-starter-venv); createdb YOUR_PROJECT_NAME
 
 # Open lib/database_connection.py and change the database name to YOUR_PROJECT_NAME
-; open lib/database_connection.py
+(databases-starter-venv); open lib/database_connection.py
 
 # Run the tests
-; pytest
+(databases-starter-venv); pytest
 
 # Run the app
-; python app.py
+(databases-starter-venv); python app.py
 ```
 
 
