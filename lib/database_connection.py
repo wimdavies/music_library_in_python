@@ -33,7 +33,7 @@ class DatabaseConnection:
 
     # This method executes an SQL query on the database.
     # It allows you to set some parameters too. You'll learn about this later.
-    def execute(self, query, params=None):
+    def execute(self, query, params=[]):
         self._check_connection()
         with self.connection.cursor() as cursor:
             cursor.execute(query, params)
