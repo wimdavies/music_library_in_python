@@ -12,7 +12,7 @@ sequenceDiagram
 
     t->>app: Runs `python app.py`
     app->>db_conn: Opens connection to database by calling `connect` method on DatabaseConnection
-    db_conn->>db_conn: Opens database connection using PG and stores the connection
+    db_conn->>db_conn: Opens database connection using `psycopg` and stores the connection
     app->>ar: Calls `all` method on AlbumRepository
     ar->>db_conn: Sends SQL query by calling `execute` method on DatabaseConnection
     db_conn->>db: Sends query to database via the open database connection
