@@ -4,3 +4,6 @@ class Album:
         self.title = title
         self.release_year = release_year
         self.artist_id = artist_id
+
+    def __eq__(self, other):
+        return self.__dict__ == other.__dict__
